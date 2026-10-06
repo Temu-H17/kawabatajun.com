@@ -1,15 +1,19 @@
 # kawabatajun.com
 
-Source code for the personal website [kawabatajun.com](https://kawabatajun.com/).
+Personal website of Jun Kawabata, hosted with GitHub Pages.
 
-This repository contains only files used by the website.
-
-## Main files
+## Pages
 
 - `index.html` — Home
 - `about.html` — Profile
-- `project.html` — Projects / activities
-- `note.html` — Note / writing links
+- `research.html` — Research
+- `activities.html` — Activities
+- `international.html` — International experience
+- `travel.html` — Railways and travel
+- `writing.html` — Writing and public communication
 - `contact.html` — Contact
-- `CNAME` — Custom domain configuration
-- `robots.txt` — Crawler settings
+- `project.html` — Redirect to Activities
+- `note.html` — Redirect to Writing
+- `styles.css` — Shared site styles
+
+`CNAME` and `robots.txt` are used for the custom domain and crawler settings.
