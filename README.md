@@ -1,13 +1,15 @@
 # kawabatajun.com
 
-Source repository for [kawabatajun.com](https://kawabatajun.com/), hosted with GitHub Pages.
+Source code for the personal website [kawabatajun.com](https://kawabatajun.com/).
 
-## Repository structure
+This repository contains only files used by the website.
 
-- `index.html`, `about.html`, `project.html`, `note.html`, `contact.html` — production website pages
-- `CNAME` — custom-domain configuration for `kawabatajun.com`
-- `robots.txt` — crawler settings
-- `research/` — research and computational notebooks
-- `experiments/` — standalone HTML experiments and prototypes
+## Main files
 
-The production website remains at the repository root so GitHub Pages can continue serving it without changing the main page URLs.
+- `index.html` — Home
+- `about.html` — Profile
+- `project.html` — Projects / activities
+- `note.html` — Note / writing links
+- `contact.html` — Contact
+- `CNAME` — Custom domain configuration
+- `robots.txt` — Crawler settings
