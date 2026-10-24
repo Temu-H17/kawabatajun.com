@@ -201,3 +201,10 @@ p { margin: 0 0 14px; }
     box-shadow: 0 10px 28px rgba(24,32,42,.12);
   }
 }
+
+.language-switch{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:.86rem;color:var(--muted)}
+.language-switch a{color:var(--muted);text-decoration:none}
+.language-switch [aria-current="true"]{color:var(--text);font-weight:700}
+.language-separator{color:var(--line)}
+@media (max-width:980px){.header-inner{flex-wrap:wrap}.language-switch{margin-left:auto}}
+@media (max-width:800px){.language-switch{margin-left:0}}
