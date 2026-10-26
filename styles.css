@@ -447,6 +447,6 @@ p { margin: 0 0 14px; }
   min-height: 34px;
   margin: -3px 0 10px;
 }
-.writing-card .button {
+.writing-card a {
   margin-top: auto;
 }
