@@ -75,9 +75,9 @@ main {
   justify-content: flex-end;
 }
 .hero-photo {
-  width: 100%;
-  max-width: 200px;
-  aspect-ratio: 1;
+  width: 200px;
+  height: 200px;
+  max-width: none;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid var(--line);
