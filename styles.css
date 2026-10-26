@@ -419,3 +419,20 @@ p { margin: 0 0 14px; }
     transform: translate(50%, 50%);
   }
 }
+
+/* Activities portfolio cards */
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.activity-card .tag-row {
+  min-height: 34px;
+  margin: -3px 0 10px;
+}
+.activity-card h3 {
+  margin-top: 2px;
+}
+.activity-card a {
+  margin-top: auto;
+}
