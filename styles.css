@@ -299,3 +299,17 @@ p { margin: 0 0 14px; }
     border-radius: 12px;
   }
 }
+
+/* Subtle borders for unselected navigation items */
+.nav a {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.nav a:hover {
+  border-color: #c9d3df;
+}
+
+.nav a[aria-current="page"] {
+  border-color: var(--text);
+}
