@@ -1133,9 +1133,6 @@ p { margin: 0 0 14px; }
   background: #111111;
   color: #ffffff;
 }
-.hero-photo {
-  filter: grayscale(100%);
-}
 .travel-feature {
   background:
     radial-gradient(circle at 18% 10%, rgba(255,255,255,.10), transparent 34%),
