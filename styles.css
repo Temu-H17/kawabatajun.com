@@ -955,3 +955,87 @@ p { margin: 0 0 14px; }
     border-right: 0;
   }
 }
+
+/* Contact page */
+.contact-topic {
+  min-height: 190px;
+}
+.contact-topic h3 {
+  margin-top: 10px;
+}
+.contact-primary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.contact-main-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.contact-main-card:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+  border-color: #c5d5e7;
+  box-shadow: 0 14px 34px rgba(24,32,42,.07);
+}
+.contact-label {
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.contact-main-card strong {
+  margin-top: 30px;
+  font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.contact-main-card > span:last-child {
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: .86rem;
+}
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.contact-links a {
+  display: block;
+  padding: 18px;
+  color: var(--text);
+  text-decoration: none;
+  border-right: 1px solid var(--line);
+}
+.contact-links a:last-child { border-right: 0; }
+.contact-links a:hover {
+  opacity: 1;
+  background: var(--accent-soft);
+}
+.contact-links strong,
+.contact-links span {
+  display: block;
+}
+.contact-links span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .78rem;
+}
+@media (max-width: 760px) {
+  .contact-primary { grid-template-columns: 1fr; }
+  .contact-links { grid-template-columns: repeat(2, 1fr); }
+  .contact-links a:nth-child(2) { border-right: 0; }
+  .contact-links a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
