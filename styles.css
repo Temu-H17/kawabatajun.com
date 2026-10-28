@@ -1024,11 +1024,11 @@ p { margin: 0 0 14px; }
   opacity: 1;
   background: var(--accent-soft);
 }
-.contact-links strong,
-.contact-links span {
+.contact-link-copy strong,
+.contact-link-copy span {
   display: block;
 }
-.contact-links span {
+.contact-link-copy span {
   margin-top: 4px;
   color: var(--muted);
   font-size: .78rem;
@@ -1108,4 +1108,13 @@ p { margin: 0 0 14px; }
   .contact-links a {
     padding: 15px;
   }
+}
+
+/* Keep social icons optically centered */
+.contact-links .social-icon {
+  margin-top: 0;
+  color: var(--muted);
+}
+.contact-links .social-icon svg {
+  display: block;
 }
