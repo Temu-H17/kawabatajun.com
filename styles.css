@@ -1143,3 +1143,140 @@ p { margin: 0 0 14px; }
     radial-gradient(circle at 18% 16%, rgba(255,255,255,.12), transparent 32%),
     linear-gradient(145deg, #0f0f0f 0%, #191919 66%, #2a2a2a 145%);
 }
+
+/* Mobile finishing pass */
+@media (max-width: 640px) {
+  .site-header { position: sticky; }
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .brand {
+    font-size: .94rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .language-switch {
+    order: 2;
+    width: 100%;
+    margin-left: 0;
+    padding: 3px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .language-switch::-webkit-scrollbar,
+  .nav::-webkit-scrollbar { display: none; }
+  .language-switch a,
+  .language-switch [aria-current="true"] {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 5px 8px;
+  }
+  .nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 4px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 6px 9px;
+  }
+  main {
+    padding: 26px 16px 58px;
+  }
+  .page-title {
+    padding-bottom: 22px;
+  }
+  .page-title h1 {
+    font-size: clamp(2.25rem, 12vw, 3.35rem);
+  }
+  .page-title p,
+  .hero .lead {
+    font-size: 1rem;
+  }
+  section {
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 1.42rem;
+  }
+  .card {
+    padding: 18px;
+  }
+  .home-hero .hero-photo {
+    width: 116px;
+    height: 116px;
+  }
+  .home-highlight {
+    min-height: 0;
+    padding: 19px;
+  }
+  .home-highlight-primary {
+    min-height: 220px;
+  }
+  .explore-card {
+    padding: 19px 17px;
+  }
+  .explore-card:last-child {
+    border-bottom: 0;
+  }
+  .research-flow {
+    gap: 16px;
+  }
+  .flow-step {
+    padding: 17px 16px;
+  }
+  .international-route {
+    padding: 18px;
+  }
+  .international-feature {
+    padding: 20px;
+    gap: 20px;
+  }
+  .travel-feature-main {
+    padding: 28px 22px 50px;
+  }
+  .travel-big-number {
+    font-size: clamp(4rem, 23vw, 6rem);
+  }
+  .contact-main-card {
+    min-height: 195px;
+    padding: 22px;
+  }
+  .contact-main-card strong {
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+  .contact-links a,
+  .contact-links a:nth-child(2) {
+    border-right: 0;
+  }
+  .contact-links a {
+    border-bottom: 1px solid var(--line);
+  }
+  .contact-links a:last-child {
+    border-bottom: 0;
+  }
+  .travel-feature-side {
+    grid-template-columns: 1fr;
+  }
+  .home-highlight-primary strong {
+    font-size: clamp(2.35rem, 15vw, 3.7rem);
+  }
+}
