@@ -1039,3 +1039,73 @@ p { margin: 0 0 14px; }
   .contact-links a:nth-child(2) { border-right: 0; }
   .contact-links a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
+
+/* Contact icons */
+.contact-icon,
+.social-icon {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  color: var(--text);
+}
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--bg);
+}
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.contact-icon svg,
+.social-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.contact-icon svg path[d*="M4 10h4v10"],
+.social-icon svg path[d*="M14 21v-8"] {
+  fill: currentColor;
+  stroke: none;
+}
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-link-copy {
+  min-width: 0;
+}
+.contact-link-copy strong,
+.contact-link-copy span {
+  display: block;
+}
+.contact-main-card .contact-label {
+  margin-top: 0;
+}
+@media (max-width: 480px) {
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-links a {
+    padding: 15px;
+  }
+}
